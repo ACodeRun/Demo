@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>五彩绳</title>
+        <style type="text/css">
+            canvas{background: #b8edc9;}
+        </style>
+    </head>
+    <body>
+        <canvas id="mycanvas" width="1200" height="600"></canvas>
+    	<script type="text/javascript">
+        var canvas=document.getElementById('mycanvas');
+        var c=mycanvas.getContext('2d');
+        if(canvas.getContext)
+        {
+            var ctx = canvas.getContext("2d");
+            ctx.beginPath();
+            ctx.lineWidth=6;
+            ctx.moveTo(730, 547);
+            ctx.lineTo(470, 547);
+            ctx.strokeStyle = "#ffa308";
+            ctx.stroke();
+            ctx.closePath();
+        }
+        for (var i = 0; i < 100; i+=5) 
+        {
+	        c.beginPath();
+	        c.lineWidth=4;
+	        c.strokeStyle="#0ba53d";
+	        c.fillStyle="#0ba53d";
+	        c.moveTo(600,300);
+	        c.arc(600,300,250,i*Math.PI/50,(i+1)*Math.PI/50);
+	        c.fill()
+    	}
+        for (var i = 1; i < 100; i+=5)
+        {
+            c.beginPath();
+            c.lineWidth=4;
+            c.strokeStyle="#0f18a5";
+            c.fillStyle="#0f18a5";
+            c.moveTo(600,300);
+            c.arc(600,300,250,i*Math.PI/50,(i+1)*Math.PI/50);
+            c.fill()
+        }
+        for (var i = 2; i < 100; i+=5)
+        {
+            c.beginPath();
+            c.lineWidth=4;
+            c.strokeStyle="#ff95ce";
+            c.fillStyle="#ff95ce";
+            c.moveTo(600,300);
+            c.arc(600,300,250,i*Math.PI/50,(i+1)*Math.PI/50);
+            c.fill()
+        }
+        for (var i = 3; i < 100; i+=5)
+        {
+            c.beginPath();
+            c.lineWidth=4;
+            c.strokeStyle="#fdff13";
+            c.fillStyle="#fdff13";
+            c.moveTo(600,300);
+            c.arc(600,300,250,i*Math.PI/50,(i+1)*Math.PI/50);
+            c.fill()
+        }
+        for (var i = 4; i < 100; i+=5)
+        {
+            c.beginPath();
+            c.lineWidth=4;
+            c.strokeStyle="#ffa308";
+            c.fillStyle="#ffa308";
+            c.moveTo(600,300);
+            c.arc(600,300,250,i*Math.PI/50,(i+1)*Math.PI/50);
+            c.fill()
+        }
+
+        c.beginPath();
+        c.lineWidth=3;
+        c.strokeStyle="#ffe1fc";
+        c.fillStyle="#f7f3ff";
+        c.moveTo(730,547);
+        c.arc(730,547,15,0,Math.PI*2);
+        c.fill()
+        c.beginPath();
+        c.lineWidth=3;
+        c.strokeStyle="#ffe1fc";
+        c.fillStyle="#f7f3ff";
+        c.moveTo(470,547);
+        c.arc(470,547,15,0,Math.PI*2);
+        c.fill()
+
+        c.beginPath();
+        c.lineWidth=3;
+        c.strokeStyle="#b8edc9";
+        c.fillStyle="#b8edc9";
+        c.moveTo(600,300);
+        c.arc(600,300,244,0,Math.PI*2);
+        c.fill()
+
+        </script>
+    </body>
+</html>
